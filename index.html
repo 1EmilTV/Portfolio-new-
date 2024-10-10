@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/src/favicon.png" type="image/png">
+    <script src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/facb2e698a.js" crossorigin="anonymous"></script>
+    <script>    
+        (function(e,t,n,r,i,s,o){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)}, e[i].l=1*new Date;s=t.createElement(n),o=t.getElementsByTagName(n)[0];s.async=1; s.src=r;o.parentNode.insertBefore(s,o)})(window,document,"script", 'https://www.handball.net/widgets/embed/v1.js',"_hb");
+        _hb({
+            widget: 'spielplan',
+            teamId: 'nuliga.hvs.1579896',
+            container: 'handball-spielplan'
+        })
+        _hb({
+            widget: 'tabelle',
+            teamId: 'nuliga.hvs.1579896',
+            container: 'handball-tabelle'
+        })
+    </script>
+</head>
+<body>
+    <div class="landing" id="start">
+        <header>
+            <nav>
+                <p class="logo"><a href="#start">emil</a></p>
+                <ul class="subhead">
+                    <li class="subheadlink"><a href="#start" class="subheadlinktext" <!--onclick="scrollToHeading(event)"-->Start</a></li>
+                    <li class="subheadlink"><a href="#aboutme" class="subheadlinktext">About Me</a></li>
+                    <li class="subheadlink"><a href="#social" class="subheadlinktext">Socials</a></li>
+                    <li class="subheadlink"><a href="#skills" class="subheadlinktext">Skills</a></li>
+                    <li class="subheadlink"><a href="#projects" class="subheadlinktext">Projekte</a></li>
+                    <li class="subheadlink"><a href="#hcab" class="subheadlinktext">HCAB</a></li>
+                    <li class="subheadlink"><a href="#contact" class="subheadlinktext">Contact</a></li>
+                </ul>
+                <ul class="links">
+                    <li class="link"><a href="#" class="linkstext"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="link"><a href="#" class="linkstext"><i class="fa-brands fa-github"></i></a></li>
+                    <li class="link"><a href="#" class="linkstext"><i class="fa-brands fa-spotify"></i></a></li>
+                    <li class="link"><a href="#" class="linkstext"><i class="fa-brands fa-steam"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="maintext">
+            <p class="maintextheading hidden">Hallo</p>
+            <p class="maintextparagraph hidden">Ich heiße <span class="maintextspan">Emil</span>. Ich bin 15 Jahre alt und in meiner Freizeit ein Web Developer.</p>
+        </div>
+    </div>
+    <div class="aboutmesec" id="aboutme">
+        <div class="aboutmetext">
+            <h1 class="aboutmeheading hidden">About <span class="aboutmespan">Me</span></h1>
+            <p class="aboutmeparagraph hidden">Mein Name ist Emil, ich bin 15 Jahre alt und wohne in Deutschland, Sachsen. <br>Ich habe mir in meiner Freizeit coden mehr oder weniger selbst beigebracht. <br>Ich gehe momentan in die 10. Klasse und meine Lieblingsfächer sind Mathe, Info, Chemie und Physik. Außerdem spiele ich Handball. <br>Ich würde mich als hilfbereiten, höflichen und zuvorkommenden Menschen beschreiben, <br>der gerne Zeit mit anderen verbringt aber auch gern alleine ist.</p>
+        </div>
+    </div>
+    <div class="socialsec" id="social">
+        <div class="socialelements">
+            <div class="socialelement hidden">
+                <a href="#" class="socialelementlink insta"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="socialelement hidden">
+                <a href="#" class="socialelementlink github"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="socialelement hidden">
+                <a href="#" class="socialelementlink spotify"><i class="fa-brands fa-spotify"></i></a>
+            </div>
+            <div class="socialelement hidden">
+                <a href="#" class="socialelementlink steam"><i class="fa-brands fa-steam"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="skillssec" id="skills">
+        <div class="skillstexts">
+            <h1 class="skillsheading hidden">Skills</h1>
+            <p class="skillsparagraph hidden">
+                Ich habe <span class="skillsspan">2021</span> mit C++ angefangen, wovon ich jedoch relativ schnell wieder abgekommen bin. 
+                Danach habe ich Web Development "gefunden". <br>Nach dem ich ein paar Tutorials anschaute, fande ich sehr schnell 
+                gefallen an diesem. <br>Seitdem Habe ich JavaScript und PHP sowie SQL bzw. SQLite dazugelernt. 
+                Es macht mir sehr viel Spaß zu coden und meine Fähigkeiten zu erweitern.
+            </p>
+            <div class="skillsicons">
+                <div class="skillicon hidden"><i class="fa-brands fa-html5"></i></div>
+                <div class="skillicon hidden"><i class="fa-brands fa-css3-alt"></i></div>
+                <div class="skillicon hidden"><i class="fa-brands fa-square-js"></i></div>
+                <div class="skillicon hidden"><i class="fa-brands fa-php"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="projectsec sticky_parent" id="projects">
+        <div class="sticky">
+            <div class="scroll_section">
+                <div class="projecthead">
+                    <h1 class="projectheading hidden">Projekte</h1>
+                </div>
+                <div class="project">
+                    <div class="firstproject">
+                        <div class="left">
+                            <h1 class="hidden">ToDoList-Website</h1>
+                            <p class="hidden">Eine ToDoList-Website. Man kann sich einen Account erstellen und sich mit diesem Anmelden. Die ToDos werden pro Account gespeichert.</p>
+                            <button class="hidden" id="firstRedirect">Zum Projekt</button>
+                        </div>
+                        <div class="right">
+                            <img src="src/firstProject.jpg" alt="Picture of the Project" class="firstpic hidden">
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="secondproject">
+                        <div class="left">
+                            <img src="src/secondProject.jpg" alt="Picture of the Project" class="secondpic hidden">
+                        </div>
+                        <div class="right">
+                            <h1 class="hidden">Home-Website</h1>
+                            <p class="hidden">Eine Home Website, die ich für meine Familie und ich erstellt habe. Man kann Aufgaben für die anderen hinzufügen.</p>
+                            <button class="hidden" id="secondRedirect">Zum Projekt</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="thirdproject">
+                        <div class="left">
+                            <h1 class="hidden">Schul-Website</h1>
+                            <p class="hidden">Eine Website, die ich für ein Schulprojekt erstellt habe. Letztendlich wurde sie nicht mit einbezogen, schade.</p>
+                            <button class="hidden" id="thirdRedirect">Zum Projekt</button>
+                        </div>
+                        <div class="right">
+                            <img src="src/thirdProject.png" alt="Picture of the Project" class="thirdpic hidden">
+                        </div>
+                    </div>
+                </div>
+                <div class="project ">
+                    <div class="fourthproject">
+                        <div class="left">
+                            <img src="src/fourthProject.jpg" alt="Picture of the Project" class="fourthpic hidden">
+                        </div>
+                        <div class="right">
+                            <h1 class="hidden">Spiel-Website</h1>
+                            <p class="hidden">Eine Website, die ich fast am Anfang meiner Reise erstellt habe. Hier habe ich einige Dinge ausprobiert.</p>
+                            <button class="hidden" id="fourthRedirect">Zum Projekt</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hcabsec" id="hcab">
+        <div class="hcabsectext">
+            <h1 class="hcabheading hidden">HCAB</h1>
+            <p class="hcabparagraph hidden">Wie schon gesagt, spiele ich Handball beim HCAB. Ich habe bis jetzt <span class="hcabspan">1</span> Tor geworfen.</p>
+        </div>
+    </div>
+    <div class="tables">
+        <div id='handball-spielplan' class="hidden"></div>
+        <div id='handball-tabelle' class="hidden"></div>
+    </div>
+    <div class="contactsec" id="contact">
+        <div class="contactsectext">
+            <h1 class="contactheading hidden">Kontakt</h1>
+            <p class="contactparagraph hidden">Du hast irgendwelche <span class="contactspan">Fragen</span> oder willst mehr wissen? Dann schreib <span class="contactspan">mir</span> gerne!</p>
+        </div>
+    </div>
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+        <!-- REQUIRED: Your Access key here. Don't worry this can be public -->
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+      
+        <!-- Optional: Subject an be prefilled using type="hidden"
+             or type="text" for normal user submitted input -->
+        <input type="hidden" name="subject" value="New Submission from Web3Forms">
+      
+        <!-- Optional: From Name you want to see in the email
+             Default is "Notifications". you can overwrite here -->
+        <input type="hidden" name="from_name" value="Your Website Name">
+      
+        <!-- Optional: To send the form submission as CC email
+             This feature available to PRO Plan users only -->
+        <input type="hidden" name="ccemail" value="partner@example.com">
+      
+        <!-- Optional: Default replyto will be "email" field (if available)
+             you may overwrite replyto with different email here -->
+        <input type="hidden" name="replyto" value="customer@example.com">
+      
+        <!-- Optional: Custom Redirection or Thank you Page
+             Make sure you add full URL including https:// -->
+        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+      
+        <!-- Optional: But Recommended: To Prevent SPAM Submission.
+             Make sure its hidden by default -->
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        
+         <!-- hCaptcha: Recommended for Advanced Spam Protection. -->
+        <div class="h-captcha" data-captcha="true"></div>
+      
+        <!-- Google reCaptcha & Cloudflare Turnstile:
+             This feature is available for paid users only -->
+        <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+        <div class="cf-turnstile" data-sitekey="<YOUR_SITE_KEY>"></div>
+        
+        <!-- Webhooks: Send your form data to Notion, Google Sheets or Zapier.
+             This feature is available for paid users only -->
+        <input type="hidden" name="webhook" value="WEBHOOK_URL_HERE" />
+      
+        <!-- Attachments: Make sure the <form> has enctype="multipart/form-data"
+             This feature is available for paid users only -->
+        <input type="file" name="attachment" />
+        
+        <!-- Advanced File Upload: This feature is available for paid users only -->
+        <input type="hidden" data-fileupload="true" />
+      
+        <!-- Custom Form Data: Form data you wish to receive in email. -->
+        <input type="email" name="email" required>
+        <input type="text" name="First Name" required>
+        <input type="text" name="Phone Number" required>
+        <textarea name="message" required></textarea>
+      
+        <button type="submit">Submit Form</button>
+      
+    </form>
+      
+    <!-- Required only if you are using hCaptcha or Advanced File Upload. -->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
