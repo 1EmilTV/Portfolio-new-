@@ -53,6 +53,10 @@ document.getElementById('hamburger').addEventListener('click', () => {
         document.getElementById('sidebar').style.width = '250px';
         opened = true;
     }
+    else {
+        document.getElementById('sidebar').style.width = '0px';
+        opened = false;
+    }
 });
 
 $(window).click(function() {
