@@ -761,6 +761,10 @@ nav .links li a:hover i {
     color: var(--text-900);
 }
 
+.hb-embed__schedule-list-item-date {
+    color: var(--text-900) !important;
+}
+
 .hb-embed__table thead th {
     color: var(--text-900);
 }
@@ -794,4 +798,25 @@ nav .links li a:hover i {
 .contactparagraph {
     font-size: 1.5em;
     padding-top: 1.5vh;
+}
+
+.contactform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    background: url(/src/background.svg) no-repeat;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 75vh;
+    margin-bottom: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
 }

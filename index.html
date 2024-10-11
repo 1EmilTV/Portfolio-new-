@@ -158,42 +158,44 @@
     <div class="contactsec" id="contact">
         <div class="contactsectext">
             <h1 class="contactheading hidden">Kontakt</h1>
-            <p class="contactparagraph hidden">Du hast irgendwelche <span class="contactspan">Fragen</span> oder willst mehr wissen? Dann schreib <span class="contactspan">mir</span> gerne!</p>
+            <p class="contactparagraph hidden">Du hast irgendwelche <span class="contactspan">Fragen</span> oder willst mehr wissen? Dann schreib <span class="contactspan">mir</span> gerne! Unten oder unter <span class="contactspan">contact@1emil.dev</span>.</p>
         </div>
     </div>
-    <form action="https://api.web3forms.com/submit" method="POST">
+    <div class="contactform">
+        <form action="https://api.web3forms.com/submit" method="POST">
 
-        <!-- REQUIRED: Your Access key here. Don't worry this can be public -->
-        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-      
-        <!-- Optional: Subject an be prefilled using type="hidden"
-             or type="text" for normal user submitted input -->
-        <input type="hidden" name="subject" value="Neue Nachricht!">
-      
-        <!-- Optional: From Name you want to see in the email
-             Default is "Notifications". you can overwrite here -->
-        <input type="hidden" name="from_name" value="Portfolio">
-      
-        <!-- Optional: Custom Redirection or Thank you Page
-             Make sure you add full URL including https:// -->
-        <input type="hidden" name="redirect" value="https://1emil.dev/success/success.html">
-      
-        <!-- Optional: But Recommended: To Prevent SPAM Submission.
-             Make sure its hidden by default -->
-        <input type="checkbox" name="botcheck" style="display: none;">
+            <!-- REQUIRED: Your Access key here. Don't worry this can be public -->
+            <input type="hidden" name="access_key" value="a2f1b60e-3c4e-4ab6-bc7a-e740f37096eeE">
         
-         <!-- hCaptcha: Recommended for Advanced Spam Protection. -->
-        <div class="h-captcha" data-captcha="true"></div>
-            
-        <!-- Custom Form Data: Form data you wish to receive in email. -->
-        <input type="email" name="email" required>
-        <input type="text" name="First Name" required>
-        <input type="text" name="Phone Number" required>
-        <textarea name="message" required></textarea>
-      
-        <button type="submit">Submit Form</button>
-      
-    </form>
+            <!-- Optional: Subject an be prefilled using type="hidden"
+                or type="text" for normal user submitted input -->
+            <input type="hidden" name="subject" value="Neue Nachricht!">
+        
+            <!-- Optional: From Name you want to see in the email
+                Default is "Notifications". you can overwrite here -->
+            <input type="hidden" name="from_name" value="Portfolio">
+        
+            <!-- Optional: Custom Redirection or Thank you Page
+                Make sure you add full URL including https:// -->
+            <input type="hidden" name="redirect" value="https://1emil.dev/success/success.html">
+        
+            <!-- Optional: But Recommended: To Prevent SPAM Submission.
+                Make sure its hidden by default -->
+            <input type="checkbox" name="botcheck" style="display: none;">
+                
+            <!-- Custom Form Data: Form data you wish to receive in email. -->
+            <input type="email" name="email" required placeholder="E-Mail">
+            <input type="text" name="Vorname" required placeholder="Vorname">
+            <input type="text" name="Betreff" required placeholder="Betreff">
+            <textarea name="nachricht" required placeholder="Nachricht"></textarea>
+
+             <!-- hCaptcha: Recommended for Advanced Spam Protection. -->
+             <div class="h-captcha" data-captcha="true"></div>
+        
+            <button type="submit">Senden</button>
+        
+        </form>
+    </div>
       
     <!-- Required only if you are using hCaptcha or Advanced File Upload. -->
     <script src="https://web3forms.com/client/script.js" async defer></script>
