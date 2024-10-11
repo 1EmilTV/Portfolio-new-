@@ -216,12 +216,12 @@ nav {
 }
 
 nav .logo {
+    color: var(--text-900);
     font-size: 2em;
     text-transform: uppercase;
     cursor: pointer;
     padding-left: 2.5vw;
     font-weight: bold;
-    color: var(--text-900);
 }
 
 nav .logo a {
@@ -765,6 +765,10 @@ nav .links li a:hover i {
     color: var(--text-900) !important;
 }
 
+.hb-embed__schedule-list-item > a {
+    color: var(--text-900);
+}
+
 .hb-embed__table thead th {
     color: var(--text-900);
 }
@@ -805,7 +809,6 @@ nav .links li a:hover i {
     justify-content: center;
     align-items: center;
     height: 90%;
-    background: url(/src/background.svg) no-repeat;
 }
 
 form {
@@ -815,8 +818,182 @@ form {
     flex-direction: column;
     width: 50%;
     height: 75vh;
-    margin-bottom: 0;
+    margin-bottom: 10vh;
+    border: 2px solid #ffffff44;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 25px;
+    gap: 2.5vh;
+}
+
+.form:nth-child(7) {
+    transition-delay: 200ms;
+}
+
+.form:nth-child(8) {
+    transition-delay: 400ms;
+}
+
+.form:nth-child(9) {
+    transition-delay: 600ms;
+}
+
+.form:nth-child(10) {
+    transition-delay: 800ms;
+}
+
+.form:nth-child(11) {
+    transition-delay: 1000ms;
+}
+
+form h1 {
+    color: var(--text-900);
+    font-size: 2.5em;
+    margin-bottom: 2.5vh;
+}
+
+form input {
+    width: 50%;
+    font-size: 1.25em;
+    background-color: transparent;
+    border: 2px solid var(--accent-500);
+    border-radius: 25px;
+    padding: 1vh 1vw;
+    transition: all .2s linear;
+    color: var(--text-900);
+}
+
+form input:focus {
+    outline: none;
+    border: 2px solid var(--accent-600);
+    transition: all .2s linear;
+}
+
+form input:invalid {
+    border: 2px solid red;
+}
+
+form input::placeholder {
+    color: var(--text-700);
+}
+
+form textarea {
+    width: 50%;
+    font-size: 1.25em;
+    background-color: transparent;
+    border: 2px solid var(--accent-500);
+    border-radius: 25px;
+    padding: 1vh 1vw;
+    transition: all .2s linear;
+    color: var(--text-900);
+    resize: none;
+}
+
+form textarea:focus {
+    outline: none;
+    border: 2px solid var(--accent-600);
+    transition: all .2s linear;
+}
+
+form textarea::placeholder {
+    color: var(--text-700);
+}
+
+form textarea:invalid {
+    border: 2px solid red;
+}
+
+form button {
+    font-size: 1.25em;
+    padding: 1vh 2vw;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--accent-500);
+    color: white;
+    cursor: pointer;
+    width: 25%;
+    transition: all .2s linear;
+}
+
+form button:hover {
+    background-color: var(--accent-600);
+    transition: all .2s linear;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-900);
+    height: 90vh;
+    width: 100%;
+    background-color: var(--background-200);
+}
+
+footer .left h6 {
+    font-size: 3em;
+    padding-left: 5vw;
+}
+
+footer .left ul {
+    list-style: none;
+    padding-left: 5vw;
+    font-size: 1.5em;
+}
+
+footer .left ul li a {
+    text-decoration: none;
+    color: var(--text-900);
+    text-align: center;
+    transition: all .2s linear;
+}
+
+footer .left ul li {
+    margin: .5vh 0;
+}
+
+footer .left ul li:hover a {
+    color: var(--accent-500);
+    transition: all .2s linear;
+}
+
+footer .middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -5vw;
+    flex-direction: column;
+    width: 50%;
+}
+
+footer .middle .logotext {
+    text-transform: uppercase;
+    font-size: 15em;
+    font-weight: bold;
+    margin-top: 12.5vh;
+    margin-bottom: 15vh;
+    color: var(--accent-500);
+}
+
+footer .middle .copyright {
+    font-size: 1em;
+}
+
+footer .middle .copytext {
+    margin-top: 2.5vh;
+    font-size: .7em;
+    width: 75%;
+    text-align: center;
+}
+
+footer .right .footersocials{
+    padding-right: 5vw;
+    display: flex;
+    gap: 5vh;
+    flex-direction: column;
+    font-size: 3em;
+}
+
+footer .right .footersocialelements:hover i {
+    color: var(--accent-500);
 }

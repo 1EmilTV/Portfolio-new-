@@ -58,7 +58,7 @@
     <div class="socialsec" id="social">
         <div class="socialelements">
             <div class="socialelement hidden">
-                <a href="#" class="socialelementlink insta"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/kapitaemil/" class="socialelementlink insta"><i class="fa-brands fa-instagram"></i></a>
             </div>
             <div class="socialelement hidden">
                 <a href="#" class="socialelementlink github"><i class="fa-brands fa-github"></i></a>
@@ -164,6 +164,8 @@
     <div class="contactform">
         <form action="https://api.web3forms.com/submit" method="POST">
 
+            <h1 class="hidden">Kontakiere mich!</h1>
+
             <!-- REQUIRED: Your Access key here. Don't worry this can be public -->
             <input type="hidden" name="access_key" value="a2f1b60e-3c4e-4ab6-bc7a-e740f37096eeE">
         
@@ -184,15 +186,15 @@
             <input type="checkbox" name="botcheck" style="display: none;">
                 
             <!-- Custom Form Data: Form data you wish to receive in email. -->
-            <input type="email" name="email" required placeholder="E-Mail">
-            <input type="text" name="Vorname" required placeholder="Vorname">
-            <input type="text" name="Betreff" required placeholder="Betreff">
-            <textarea name="nachricht" required placeholder="Nachricht"></textarea>
+            <input class="hidden" type="email" name="email" required placeholder="E-Mail" autocomplete="off">
+            <input class="hidden" type="text" name="Vorname" required placeholder="Vorname">
+            <input class="hidden" type="text" name="Betreff" required placeholder="Betreff">
+            <textarea class="hidden" name="nachricht" required placeholder="Nachricht"></textarea>
 
              <!-- hCaptcha: Recommended for Advanced Spam Protection. -->
              <div class="h-captcha" data-captcha="true"></div>
         
-            <button type="submit">Senden</button>
+            <button class="hidden" type="submit">Senden</button>
         
         </form>
     </div>
@@ -201,7 +203,47 @@
     <script src="https://web3forms.com/client/script.js" async defer></script>
 
     <footer>
-
+        <div class="left">
+            <h6>Links</h6>
+            <ul class="footerlinks">
+                <li class="footerlink"><a href="#start" class="subheadlinktext" <!--onclick="scrollToHeading(event)"-->Start</a></li>
+                <li class="footerlink"><a href="#aboutme" class="subheadlinktext">About Me</a></li>
+                <li class="footerlink"><a href="#social" class="subheadlinktext">Socials</a></li>
+                <li class="footerlink"><a href="#skills" class="subheadlinktext">Skills</a></li>
+                <li class="footerlink"><a href="#projects" class="subheadlinktext">Projekte</a></li>
+                <li class="footerlink"><a href="#hcab" class="subheadlinktext">HCAB</a></li>
+                <li class="footerlink"><a href="#contact" class="subheadlinktext">Contact</a></li>
+            </ul>
+        </div>
+        <div class="middle">
+            <p class="logotext">emil</p>
+            <p class="copyright">&copy 2024 Emil Repmann <br> <p class="copytext">Permission is hereby granted, free of charge, to any person obtaining a copy
+                of this software and associated documentation files (the "Software"), to deal
+                in the Software without restriction, including without limitation the rights
+                to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                copies of the Software, and to permit persons to whom the Software is
+                furnished to do so, subject to the following conditions: <br>
+                
+                The above copyright notice and this permission notice shall be included in all
+                copies or substantial portions of the Software.</p>
+                </p>
+        </div>
+        <div class="right">
+            <div class="footersocials">
+                <div class="footersocialelements">
+                    <a href="https://www.instagram.com/kapitaemil/" class="footersocialelement insta"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="footersocialelements">
+                    <a href="#" class="footersocialelement github"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="footersocialelements">
+                    <a href="#" class="footersocialelement spotify"><i class="fa-brands fa-spotify"></i></a>
+                </div>
+                <div class="footersocialelements">
+                    <a href="#" class="footersocialelement steam"><i class="fa-brands fa-steam"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
