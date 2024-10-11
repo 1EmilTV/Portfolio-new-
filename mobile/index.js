@@ -45,29 +45,3 @@ const Btn4 = document.getElementById('fourthRedirect');
 Btn4.addEventListener('click', () => {
     location.href = "https://spiel-website.netlify.app";
 });
-
-opened = false;
-
-document.getElementById('hamburger').addEventListener('click', () => {
-    if (!opened) {
-        document.getElementById('sidebar').style.width = '250px';
-        opened = true;
-    }
-    else {
-        document.getElementById('sidebar').style.width = '0px';
-        opened = false;
-    }
-});
-
-const onClickOutside = (element, callback) => {
-    document.addEventListener('click', (e) => {
-        if (!element.contains(e.target)) {
-            callback();
-        }
-    });
-}
-
-onClickOutside('#sidebar', () => {
-    document.getElementById('sidebar').style.width = '0px';
-    opened = false;
-});
