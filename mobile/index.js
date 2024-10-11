@@ -52,8 +52,14 @@ document.getElementById('hamburger').addEventListener('click', () => {
     if (!opened) {
         document.getElementById('sidebar').style.width = '250px';
         opened = true;
-    } else {
-        document.getElementById('sidebar').style.width = '0';
-        opened = false;
     }
+});
+
+$(window).click(function() {
+    document.getElementById('sidebar').style.width = '0px';
+    opened = false;
+});
+
+$('#sidebar').click(function(e) {
+    e.stopPropagation();
 });
