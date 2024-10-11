@@ -520,7 +520,6 @@ nav .links li a:hover i {
 .firstproject, .secondproject, .thirdproject, .fourthproject {
     width: 80%;
     margin-left: 10%;
-    align-items: center;
     height: 50vh;
     background-color: var(--background-200);
     padding: 1vw;
