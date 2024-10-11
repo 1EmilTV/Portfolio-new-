@@ -1,7 +1,3 @@
-if (window.screen.width < 768) {
-    location.href = '/mobile/mobile.html';
-}
-
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -26,24 +22,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-const stickysections = [...document.querySelectorAll('.sticky')];
-console.log(stickysections);
-
-window.addEventListener("scroll", (e) => {
-    for (let i = 0; i < stickysections.length; i++) {
-        transform(stickysections[i]);
-    }
-})
-
-function transform(section) {
-    const offsetTop = section.parentElement.offsetTop;
-    const scrollSection = section.querySelector('.scroll_section');
-    let percentage = ((window.scrollY - offsetTop) / window.innerHeight) * 100; 
-    percentage = percentage < 0 ? 0 : percentage > 400 ? 400 : percentage;
-    scrollSection.style.transform = `translate3d(${-(percentage)}dvw, 0, 0)`;
-
-}
-
 const Btn1 = document.getElementById('firstRedirect');
 
 Btn1.addEventListener('click', () => {
@@ -66,4 +44,16 @@ const Btn4 = document.getElementById('fourthRedirect');
 
 Btn4.addEventListener('click', () => {
     location.href = "https://spiel-website.netlify.app";
+});
+
+opened = false;
+
+document.getElementById('hamburger').addEventListener('click', () => {
+    if (!opened) {
+        document.getElementById('sidebar').style.width = '250px';
+        opened = true;
+    } else {
+        document.getElementById('sidebar').style.width = '0';
+        opened = false;
+    }
 });
