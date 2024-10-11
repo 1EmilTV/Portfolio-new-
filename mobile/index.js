@@ -59,11 +59,15 @@ document.getElementById('hamburger').addEventListener('click', () => {
     }
 });
 
-$(window).click(function() {
+const onClickOutside = (element, callback) => {
+    document.addEventListener('click', (e) => {
+        if (!element.contains(e.target)) {
+            callback();
+        }
+    });
+}
+
+onClickOutside('#sidebar', () => {
     document.getElementById('sidebar').style.width = '0px';
     opened = false;
-});
-
-$('#sidebar').click(function(e) {
-    e.stopPropagation();
 });
