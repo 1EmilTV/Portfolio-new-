@@ -184,8 +184,6 @@ header {
 }
 
 .landing, .aboutmesec, .socialsec, .skillssec {
-    overflow-y: scroll;
-    overflow-x: hidden;
     width: 100%;
 }
 
@@ -255,7 +253,7 @@ nav .subhead li a:hover {
 
 nav .links {
     display: flex;
-    gap: 1dvw;
+    gap: 1vw;
     padding-right: 2.5vw;
     transform: scale(125%);
 }
@@ -454,7 +452,7 @@ nav .links li a:hover i {
 
 .skillsicons {
     display: flex;
-    gap: 1.5dvw;
+    gap: 1.5vw;
     font-size: 2.5em;
     color: var(--accent-500);
 }
