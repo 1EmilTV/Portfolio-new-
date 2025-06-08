@@ -1,3 +1,5 @@
+location.href='https://www.emil-dev.me/';
+
 if (window.screen.width < 768) {
     location.href = '/mobile/mobile.html';
 }
